@@ -2,3 +2,4 @@ Flask
 Werkzeug
 requests
 datadog-api-client
+python-dotenv

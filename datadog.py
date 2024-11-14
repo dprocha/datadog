@@ -3,6 +3,9 @@ from datadog_api_client import ApiClient, Configuration
 from datadog_api_client.v1.api.hosts_api import HostsApi
 from datadog_api_client.v1.api.events_api import EventsApi
 from datadog_api_client.v1.model.event_create_request import EventCreateRequest
+from dotenv import load_dotenv
+
+load_dotenv()  # Loads the .env file
 
 configuration = Configuration()
 configuration.api_key["apiKeyAuth"] = os.getenv("DD_API_KEY")

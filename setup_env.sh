@@ -26,7 +26,5 @@ else
   echo "No $REQUIREMENTS_FILE found. You can create one by running 'pip freeze > $REQUIREMENTS_FILE'."
 fi
 
-python3 "datadog.py"
-
 # Final message
 echo "Setup complete. To deactivate the environment, type 'deactivate'."
