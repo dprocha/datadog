@@ -19,13 +19,19 @@ To use the API, ensure the SQLite database and the orders table are set up. You 
 
 ## Running the API
 
-1. Start the Flask app:
+1. Source the Virtual Environment
+
+```bash
+source ".venv/bin/activate"
+```
+
+2. Start the Flask app:
 
 ```bash
 python3 app.py
 ```
 
-2. The app will be accessible at http://localhost:8080.
+3. The app will be accessible at http://localhost:8080.
 
 ## Endpoints
 
@@ -59,7 +65,7 @@ python3 app.py
 ```bash
 curl -X POST http://localhost:8080/order \
      -H "Content-Type: application/json" \
-     -d '{"item_name": "Burger", "price": 9.99}'
+     -d '{"item_name": "X-Burger", "price": 9.99}'
 ```
 
 ### 2. `GET /orders`
