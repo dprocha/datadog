@@ -4,9 +4,28 @@
 
 This API allows you to create, retrieve, update, and delete food orders stored in an SQLite database. Each order includes an item name, price, and timestamp of the order.
 
-## Base URL
+## Set Virtual Environment
+```bash
+./setup_env.sh
+```
 
-- **Host**: `http://localhost:8080`
+## Database Setup
+
+To use the API, ensure the SQLite database and the orders table are set up. You can create the database and table by running the following commands:
+
+```bash
+./setup_orders_db.sh
+```
+
+## Running the API
+
+1. Start the Flask app:
+
+```bash
+python3 app.py
+```
+
+2. The app will be accessible at http://localhost:8080.
 
 ## Endpoints
 
@@ -167,12 +186,4 @@ curl -X PUT http://localhost:8080/order/1 \
 
 ```bash
 curl -X DELETE http://localhost:8080/order/1
-```
-
-### 5. `Database Setup`
-
-To use the API, ensure the SQLite database and the orders table are set up. You can create the database and table by running the following commands:
-
-```bash
-./setup_orders_db.sh
 ```
